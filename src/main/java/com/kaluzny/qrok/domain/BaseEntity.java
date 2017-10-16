@@ -10,7 +10,7 @@ public abstract class BaseEntity {
 
     @Id
     @Column(insertable = false, updatable = false)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -33,5 +33,12 @@ public abstract class BaseEntity {
     @Override
     public int hashCode() {
         return getId();
+    }
+
+    @Override
+    public String toString() {
+        return "BaseEntity{" +
+                "id=" + id +
+                '}';
     }
 }
