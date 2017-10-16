@@ -11,9 +11,12 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'application'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
+
+mainClassName = 'com.kaluzny.qrok.Application'
 
 group = 'com.kaluzny.qrok'
 version = '0.0.1-SNAPSHOT'
@@ -23,13 +26,17 @@ repositories {
     mavenCentral()
 }
 
-
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-data-rest')
     compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile group: 'javax.inject', name: 'javax.inject', version: '1'
     runtime('mysql:mysql-connector-java')
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile('org.springframework.security:spring-security-test')
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.2.1'
 }
