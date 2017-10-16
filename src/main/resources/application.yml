@@ -5,7 +5,7 @@ spring:
 # Database
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: dbc:mysql://localhost:3306/appdb?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/appdb?createDatabaseIfNotExist=true
     username: qrok
     password: qrok
 # JPA properties
