@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>c86c66be-e5e8-44c3-afac-e035842cf2a7</OriginalElement>
+  <nodes>
+    <node x="378.75" y="191.0">c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.author_book</node>
+    <node x="451.0" y="11.0">c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.books</node>
+    <node x="207.0" y="0.0">c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.authors</node>
+    <node x="0.0" y="22.0">c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.rewards</node>
+    <node x="75.25" y="191.0">c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.authors_rewards</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.author_book" target="c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.authors">
+      <point x="-41.5" y="-37.0" />
+      <point x="420.25" y="166.0" />
+      <point x="375.0" y="166.0" />
+      <point x="56.0" y="70.5" />
+    </edge>
+    <edge source="c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.authors_rewards" target="c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.rewards">
+      <point x="-51.5" y="-37.0" />
+      <point x="126.75" y="166.0" />
+      <point x="93.5" y="166.0" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.authors_rewards" target="c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.authors">
+      <point x="51.5" y="-37.0" />
+      <point x="229.75" y="166.0" />
+      <point x="263.0" y="166.0" />
+      <point x="-56.0" y="70.5" />
+    </edge>
+    <edge source="c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.author_book" target="c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.books">
+      <point x="41.5" y="-37.0" />
+      <point x="503.25" y="166.0" />
+      <point x="548.5" y="166.0" />
+      <point x="0.0" y="59.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.8513513513513513" x="323.0" y="132.5" />
+  <SelectedNodes>
+    <node>c86c66be-e5e8-44c3-afac-e035842cf2a7.TABLE:appdb.authors_rewards</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Key columns</Category>
+    <Category>Columns</Category>
+  </Categories>
+</Diagram>
+
