@@ -1,4 +1,3 @@
-
 INSERT INTO authors (author_first_name, author_last_name, author_sex, author_birth_date)
 VALUES ('FirstName1', 'LastName1', 'MALE', '1979-12-12');
 INSERT INTO authors (author_first_name, author_last_name, author_sex, author_birth_date)
@@ -29,6 +28,6 @@ INSERT INTO author_book (author_fk, book_fk) VALUES (2, 1);
 INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (5, 1);
 INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (2, 2);
 INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (1, 3);
-INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (4, 1);
+INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (4, 3);
 INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (2, 3);
 INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (1, 2);

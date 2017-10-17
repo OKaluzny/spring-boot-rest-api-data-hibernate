@@ -1,3 +1,7 @@
+DROP DATABASE IF EXISTS `appdb`;
+CREATE DATABASE `appdb`;
+USE `appdb`;
+
 CREATE TABLE IF NOT EXISTS `authors` (
   `author_id`         INT(11) NOT NULL AUTO_INCREMENT,
   `author_birth_date` DATETIME         DEFAULT NULL,
@@ -44,9 +48,9 @@ CREATE TABLE IF NOT EXISTS `author_book` (
 CREATE TABLE IF NOT EXISTS `authors_rewards` (
   `author_author_id`  INT(11) NOT NULL,
   `rewards_reward_id` INT(11) NOT NULL,
-  PRIMARY KEY (`author_author_id`, `rewards_reward_id`),
-  FOREIGN KEY (`author_author_id`) REFERENCES `authors` (`author_id`),
-  FOREIGN KEY (`rewards_reward_id`) REFERENCES `rewards` (`reward_id`)
+  KEY `authors` (`author_author_id`),
+  CONSTRAINT `authors` FOREIGN KEY (`author_author_id`) REFERENCES `authors` (`author_id`),
+  CONSTRAINT `rewards` FOREIGN KEY (`rewards_reward_id`) REFERENCES `rewards` (`reward_id`)
 )
   ENGINE = InnoDB
-  DEFAULT CHARSET = utf8;
+  DEFAULT CHARSET = utf8
