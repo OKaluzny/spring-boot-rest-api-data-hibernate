@@ -11,7 +11,7 @@ spring:
 # JPA properties
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: none
     # Show or not log for each sql query
     show-sql: true
     database: mysql
