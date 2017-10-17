@@ -15,20 +15,20 @@ INSERT INTO books (book_title, book_isbn, book_genre) VALUES ('book2', '124-457-
 INSERT INTO books (book_title, book_isbn, book_genre) VALUES ('book3', '125-458-791', 'SATIRE');
 INSERT INTO books (book_title, book_isbn, book_genre) VALUES ('book4', '126-459-792', 'FANTASY');
 
-INSERT INTO Rewards (reward_title, reward_year) VALUES ('Reward1', 2010);
-INSERT INTO Rewards (reward_title, reward_year) VALUES ('Reward2', 2012);
-INSERT INTO Rewards (reward_title, reward_year) VALUES ('Reward3', 2014);
+INSERT INTO rewards (reward_title, reward_year) VALUES ('Reward1', 2010);
+INSERT INTO rewards (reward_title, reward_year) VALUES ('Reward2', 2012);
+INSERT INTO rewards (reward_title, reward_year) VALUES ('Reward3', 2014);
 
--- INSERT INTO author_book (author_fk, book_fk) VALUES (1, 1);
--- INSERT INTO author_book (author_fk, book_fk) VALUES (2, 2);
--- INSERT INTO author_book (author_fk, book_fk) VALUES (1, 3);
--- INSERT INTO author_book (author_fk, book_fk) VALUES (4, 4);
--- INSERT INTO author_book (author_fk, book_fk) VALUES (2, 3);
--- INSERT INTO author_book (author_fk, book_fk) VALUES (2, 1);
+INSERT INTO author_book (author_fk, book_fk) VALUES (1, 1);
+INSERT INTO author_book (author_fk, book_fk) VALUES (2, 2);
+INSERT INTO author_book (author_fk, book_fk) VALUES (1, 3);
+INSERT INTO author_book (author_fk, book_fk) VALUES (4, 4);
+INSERT INTO author_book (author_fk, book_fk) VALUES (2, 3);
+INSERT INTO author_book (author_fk, book_fk) VALUES (2, 1);
 
--- INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (5, 1);
--- INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (2, 2);
--- INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (1, 3);
--- INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (4, 1);
--- INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (2, 3);
--- INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (1, 2);
+INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (5, 1);
+INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (2, 2);
+INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (1, 3);
+INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (4, 1);
+INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (2, 3);
+INSERT INTO authors_rewards (author_author_id, rewards_reward_id) VALUES (1, 2);
