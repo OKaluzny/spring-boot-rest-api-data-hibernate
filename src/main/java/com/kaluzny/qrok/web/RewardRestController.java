@@ -31,7 +31,7 @@ public class RewardRestController {
 
     /* Create a reward */
     @RequestMapping(
-            value = "reward",
+            value = "rewards",
             method = RequestMethod.POST)
     public ResponseEntity<Reward> createReward(@RequestBody Reward reward, UriComponentsBuilder ucBuilder) {
         LOGGER.debug(">>> Creating address with id: " + reward.getId());
@@ -47,7 +47,7 @@ public class RewardRestController {
 
     /* Reading single reward */
     @RequestMapping(
-            value = "reward/{id}",
+            value = "rewards/{id}",
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Reward> getReward(@PathVariable("id") int id) {
