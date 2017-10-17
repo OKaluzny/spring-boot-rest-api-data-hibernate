@@ -72,7 +72,7 @@ public class Author extends BaseEntity {
         this.birthDate = birthDate;
     }
 
-
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY /*orphanRemoval = true*/)
     public List<Reward> getRewards() {
         return rewards;
