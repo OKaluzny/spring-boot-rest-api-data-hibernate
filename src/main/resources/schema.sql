@@ -10,7 +10,6 @@ CREATE TABLE IF NOT EXISTS `authors` (
   AUTO_INCREMENT = 1
   DEFAULT CHARSET = utf8;
 
-
 CREATE TABLE IF NOT EXISTS `books` (
   `book_id`    INT(11) NOT NULL AUTO_INCREMENT,
   `book_genre` VARCHAR(255)     DEFAULT NULL,
@@ -19,6 +18,7 @@ CREATE TABLE IF NOT EXISTS `books` (
   PRIMARY KEY (`book_id`)
 )
   ENGINE = InnoDB
+  AUTO_INCREMENT = 1
   DEFAULT CHARSET = utf8;
 
 CREATE TABLE IF NOT EXISTS `rewards` (
@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS `rewards` (
   PRIMARY KEY (`reward_id`)
 )
   ENGINE = InnoDB
+  AUTO_INCREMENT = 1
   DEFAULT CHARSET = utf8;
 
 CREATE TABLE IF NOT EXISTS `author_book` (
@@ -39,7 +40,6 @@ CREATE TABLE IF NOT EXISTS `author_book` (
 )
   ENGINE = InnoDB
   DEFAULT CHARSET = utf8;
-
 
 CREATE TABLE IF NOT EXISTS `authors_rewards` (
   `author_author_id`  INT(11) NOT NULL,
